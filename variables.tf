@@ -3,14 +3,9 @@ variable "token" {
   description = "Your Linode API Personal Access Token. (required)"
 }
 
-variable "leader_password" {
+variable "root_password" {
   type = string
   description = "Password for Leader node (Required)"
-}
-
-variable "worker_node_password" {
-  type = string
-  description = "Password for Worker nodes (Required)"
 }
 
 variable "linode_image" {
@@ -53,6 +48,12 @@ variable "locust_version" {
   type = string
   description = "Locust version"
   default = "2.18.3"
+}
+
+variable "uses_mtls" {
+  type = bool
+  description = "Indicates whether mTLS certs are required"
+  default = false
 }
 
 variable "server_cert" {

@@ -3,7 +3,7 @@ output "leader_public_ip" {
   description = "The public IP address of the leader server instance."
 }
 
-output "nodes_public_ip" {
-  value       = linode_instance.nodes.*.ip_address
-  description = "The public IP address of the nodes instances."
+output "workers_public_ip" {
+  value       = linode_instance.workers.*.ip_address
+  description = "The public IP address of the worker instances."
 }
