@@ -89,7 +89,7 @@ Second, create a directory named `certs` under the `plan` directory, then add th
 
 Lastly, use `mtls_locustfile.py` as a base to build your test file. Basically, you need to tweak values of `url`, `headers`, and `payload` varible (if `POST` is being tested). 
 
-```
+```python
 url = ""
 
 payload = json.dumps({})
