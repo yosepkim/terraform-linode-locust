@@ -1,4 +1,4 @@
-# Deploy Locust to Linode Multiple Regions using Terraform
+# Deploy Locust to Multiple Linode Regions using Terraform
 
 ### What is Locust?
 [Locust](https://locust.io/) is a scalable, modern load / performance testing tool, written in Python. It can be deployed as single instance or across multiple nodes, following the leader-worker pattern. 
@@ -21,7 +21,7 @@ class Quickstart(HttpUser):
 ```
 
 ### What is Linode?
-[Linode](https://linode.com) is one of the best, affordable, and flexible cloud provider, powered by Akamai Connected Cloud. It currently has 20+ core data centers across the globe. The Terraform script in this repository will deploy a Locust leader instance and however many worker instances per different regions (i.e. data centers). Thus, when test runs, requests would be generated from multiple regions simultaneously. 
+[Linode](https://linode.com) is one of the best, affordable, and flexible cloud providers, powered by Akamai Connected Cloud. It currently has 20+ core data centers across the globe. The Terraform script in this repository will deploy a Locust leader instance and however many worker instances per different regions (i.e. data centers). Thus, when test runs, requests would be generated from multiple regions simultaneously. 
 
 ### Getting Started
 Once `terraform` is installed on your local machine, you can pull the repository.
