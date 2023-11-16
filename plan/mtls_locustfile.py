@@ -4,7 +4,6 @@ import requests
 import json
 
 class TLSAdapter(requests.adapters.HTTPAdapter):
-
     def init_poolmanager(self, *args, **kwargs):
         ctx = ssl.create_default_context()
         ctx.set_ciphers('DEFAULT@SECLEVEL=1')
